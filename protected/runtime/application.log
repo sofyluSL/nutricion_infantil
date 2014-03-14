@@ -1,0 +1,60 @@
+2014/03/14 20:32:31 [error] [exception.CrugeException.500] Por favor cambie las referencias a 'UserIdentity' por 'CrugeUser'<br/>500
+REQUEST_URI=/nutricion_infantil/index.php/site/login
+HTTP_REFERER=http://localhost/nutricion_infantil/index.php/site/login
+---
+2014/03/14 20:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cruge_ui_usermanagementadmin"' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge_ui_userma...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\nutricion_infantil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nutricion_infantil/index.php/cruge_ui_usermanagementadmin
+---
+2014/03/14 20:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cruge_ui_usermanagementadmin"' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cruge_ui_userma...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\nutricion_infantil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nutricion_infantil/index.php/cruge_ui_usermanagementadmin
+---
+2014/03/14 20:41:42 [error] [php] include(Util.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\nutricion_infantil\protected\extensions\bootstrap\widgets\TbButtonColumn.php(69): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CButtonColumn.php(319): TbButtonColumn->renderButton()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(151): TbButtonColumn->renderDataCellContent()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(616): TbButtonColumn->renderDataCell()
+#4 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#5 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbGridView->run()
+#11 C:\wamp\www\nutricion_infantil\protected\modules\cruge\views\ui\usermanagementadmin.php(46): UiController->widget()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): UiController->renderInternal()
+#14 C:\wamp\www\yii\framework\web\CController.php(869): UiController->renderFile()
+#15 C:\wamp\www\yii\framework\web\CController.php(782): UiController->renderPartial()
+#16 C:\wamp\www\nutricion_infantil\protected\modules\cruge\controllers\UiController.php(200): UiController->render()
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UiController->actionUserManagementAdmin()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UiController->runAction()
+#20 C:\wamp\www\nutricion_infantil\protected\modules\cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#21 C:\wamp\www\nutricion_infantil\protected\modules\cruge\components\CrugeUiAccessControlFilter.php(37): CrugeUiAccessControlFilter->preFilter()
+#22 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CrugeUiAccessControlFilter->preFilter()
+#23 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CrugeUiAccessControlFilter->filter()
+#24 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#26 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UiController->filterAccessControl()
+#27 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#28 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\wamp\www\yii\framework\web\CController.php(265): UiController->runActionWithFilters()
+#30 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UiController->run()
+#31 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\wamp\www\nutricion_infantil\index.php(13): CWebApplication->run()
+REQUEST_URI=/nutricion_infantil/index.php/cruge/ui/usermanagementadmin
+in C:\wamp\www\nutricion_infantil\protected\extensions\bootstrap\widgets\TbButtonColumn.php (69)
+in C:\wamp\www\nutricion_infantil\protected\modules\cruge\views\ui\usermanagementadmin.php (46)
+in C:\wamp\www\nutricion_infantil\protected\modules\cruge\controllers\UiController.php (200)
